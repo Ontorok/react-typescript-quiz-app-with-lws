@@ -1,12 +1,13 @@
 import React from "react";
 import "../styles/App.css";
-import Nav from "./Nav";
+import Layout from "./Layout";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div>
-      <Nav />
-    </div>
+    <Layout>
+      <Home />
+    </Layout>
   );
 }
 
