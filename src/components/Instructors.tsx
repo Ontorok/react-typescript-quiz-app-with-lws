@@ -7,23 +7,23 @@ const Instructors = (): JSX.Element => {
     {
       instructorId: "ins101",
       name: "Sumit Saha",
-      img: "https://i.ibb.co/nstfMkZ/sumit-saha.jpg",
+      img: "https://i.ibb.co/nstfMkZ/sumit-saha.jpg"
     },
     {
       instructorId: "ins102",
       name: "H M Nayeem",
-      img: "https://i.ibb.co/wsLXKGb/hm-nayeem.jpg",
+      img: "https://i.ibb.co/wsLXKGb/hm-nayeem.jpg"
     },
     {
       instructorId: "ins103",
       name: "Anisul Islam",
-      img: "https://i.ibb.co/YbDwysR/anisulhaque.jpg",
+      img: "https://i.ibb.co/YbDwysR/anisulhaque.jpg"
     },
     {
       instructorId: "ins104",
       name: "Saidur Rahman Shetu",
-      img: "https://i.ibb.co/K24wzSw/shetu.webp",
-    },
+      img: "https://i.ibb.co/K24wzSw/shetu.webp"
+    }
   ];
   return (
     <div className={classes.instructors}>
