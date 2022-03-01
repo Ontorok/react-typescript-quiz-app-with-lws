@@ -1,0 +1,11 @@
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  gap: 0.5rem;
+}
+
+.account span {
+  margin-right: 10px;
+}

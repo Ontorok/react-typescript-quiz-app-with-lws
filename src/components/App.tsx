@@ -1,9 +1,11 @@
 import React from "react";
+import "../styles/App.css";
+import Nav from "./Nav";
 
 function App() {
   return (
     <div>
-      <p>Hello Nasir</p>
+      <Nav />
     </div>
   );
 }
