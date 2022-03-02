@@ -4,7 +4,7 @@ import classes from "../styles/Form.module.css";
 type autoComplete = "off" | "on";
 
 interface IProps {
-  children: JSX.Element;
+  children?: JSX.Element | JSX.Element[];
   className?: string;
   autoComplete: autoComplete;
   style: object;
