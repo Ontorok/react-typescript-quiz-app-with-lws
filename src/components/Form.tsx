@@ -10,7 +10,7 @@ interface IProps {
   style: object;
 }
 
-const Form = (props: IProps) => {
+const Form = (props: IProps): JSX.Element => {
   const { children, className, ...rest } = props;
   return (
     <form className={`${className} ${classes.form}`} {...rest}>

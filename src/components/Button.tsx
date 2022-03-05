@@ -8,7 +8,7 @@ type Props = {
   type: ButtonTypes;
 };
 
-const Button = ({ children, type }: Props) => {
+const Button = ({ children, type }: Props): JSX.Element => {
   return (
     <button type={type} className={classes.button}>
       {children}

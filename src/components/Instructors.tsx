@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { IInstructor } from "../models/instructor";
 import classes from "../styles/Instructor.module.css";
 
@@ -28,10 +29,12 @@ const Instructors = (): JSX.Element => {
   return (
     <div className={classes.instructors}>
       {instructors.map((ins) => (
-        <div className={classes.instructor} key={ins.instructorId}>
-          <img src={ins.img} alt={ins.name} />
-          <p>{ins.name}</p>
-        </div>
+        <Link to={`/videos/${ins.instructorId}`} key={ins.instructorId}>
+          <div className={classes.instructor} key={ins.instructorId}>
+            <img src={ins.img} alt={ins.name} />
+            <p>{ins.name}</p>
+          </div>
+        </Link>
       ))}
     </div>
   );

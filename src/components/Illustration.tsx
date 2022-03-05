@@ -5,7 +5,7 @@ type Props = {
   imgSource: string;
 };
 
-const Illustration = (props: Props) => {
+const Illustration = (props: Props): JSX.Element => {
   const { imgSource } = props;
   return (
     <div className={classes.illustration}>

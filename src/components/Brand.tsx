@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/images/logo-bg.png";
 import classes from "../styles/Brand.module.css";
 
-function Brand() {
+function Brand(): JSX.Element {
   return (
     <div className={classes.brand}>
       <Link to="/">

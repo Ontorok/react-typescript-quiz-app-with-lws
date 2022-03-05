@@ -5,7 +5,7 @@ import TextInput from "./TextInput";
 
 type Props = {};
 
-const LoginForm = (props: Props) => {
+const LoginForm = (props: Props): JSX.Element => {
   return (
     <Form style={{ height: "330px" }} autoComplete="off">
       <TextInput type="text" placeholder="Email" icon="alternate_email" />

@@ -5,7 +5,7 @@ import Checkbox from "./Checkbox";
 import Form from "./Form";
 import TextInput from "./TextInput";
 
-const SignupForm = () => {
+const SignupForm = (): JSX.Element => {
   return (
     <Form autoComplete="off" style={{ height: "500px" }}>
       <TextInput type="text" placeholder="User name" icon="person" />

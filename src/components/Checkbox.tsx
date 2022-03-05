@@ -5,7 +5,7 @@ type Props = {
   text: string;
 };
 
-const Checkbox = ({ className, text }: Props) => {
+const Checkbox = ({ className, text }: Props): JSX.Element => {
   return (
     <label className={className}>
       <input type="checkbox" />

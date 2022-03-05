@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import classes from "../styles/Account.module.css";
 
-const Account = () => {
+const Account = (): JSX.Element => {
   return (
     <div className={classes.account}>
       <Link to="/signup">Signup</Link>

@@ -33,7 +33,7 @@ type Props = {
   icon: string;
 };
 
-const TextInput = (props: Props) => {
+const TextInput = (props: Props): JSX.Element => {
   const { type, placeholder, icon } = props;
   return (
     <div className={classes.textInput}>
