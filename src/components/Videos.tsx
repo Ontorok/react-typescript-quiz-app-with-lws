@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { IVideo } from "../models/video";
 import classes from "../styles/Videos.module.css";
 import Video from "./Video";
@@ -29,7 +30,18 @@ function Videos(): JSX.Element {
   return (
     <div className={classes.videos}>
       {videos.map(({ youtubeID, title, noq }) => (
-        <Video key={youtubeID} title={title} id={youtubeID} noq={noq} />
+        <Link
+          className={classes.videos}
+          key={youtubeID}
+          to={{
+            pathname: `/quiz/${youtubeID}`,
+            state: {
+              videoTitle: title
+            }
+          }}
+        >
+          <Video title={title} id={youtubeID} noq={noq} />
+        </Link>
       ))}
     </div>
   );
